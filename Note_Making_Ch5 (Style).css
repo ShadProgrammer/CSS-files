@@ -1,0 +1,18 @@
+.first{
+    color: maroon;
+    background-color: grey;
+    border: inset;
+    border-color: rgb(0, 17, 255);
+}
+.second{
+    color: rgba(255, 0, 255, 0.596);
+    background-color: rgb(164, 189, 75);
+    border: inset;
+    border-color: rgb(25, 0, 255)
+}
+.third{
+    color: darkgreen;
+    background-color: rgb(0, 162, 255);
+    border: inset;
+    border-color: rgb(17, 0, 255)
+}

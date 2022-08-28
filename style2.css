@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+nav,
+ul {
+  display: flex;
+  padding: 0px 22px;
+  background-color: black;
+  color: white;
+  font-size: 1.1em;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: blueviolet;
+  background-color: rgb(255, 255, 255);
+}
+li {
+  padding: 1.1em 3em;
+  list-style: none;
+}
+/* Changing image border square to circular */
+nav > img {
+  border: 5px solid #000;
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+}
+/* Using grid CSS to display images in 3 columns */
+/* Radial-gradient for laptop users */
+#box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000;
+  background-image: radial-gradient(green, blue, red, yellow, purple);
+  border: 3px solid #808080;
+}
+.nature {
+  border: 4px solid #000;
+  border-radius: 10px;
+  width: 25rem;
+  height: 15rem;
+  transition: opacity 1s, width 25s height 25s;
+}
+
+/* Zooming in an image by 1rem and decreasing opacity whenever image is hovered */
+.nature:hover {
+  opacity: 0.3;
+  width: 26rem;
+  height: 16rem;
+}
+h1 {
+  text-align: center;
+}
+
+/* Radial-gradient for tablet users */
+/* Displaying images in two columns for tablet users */
+@media screen and (max-width: 922px) {
+  #box {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #ff0000;
+    background-image: radial-gradient(green, blue, red, yellow, purple);
+  }
+  /* To check when my website is reaching 922px width */
+  /* h1 {
+    color: pink;
+  } */
+}
+
+/* Linear-gradient for mobile users and using flexbox wrap property to wrap items. */
+@media screen and (max-width: 650px) {
+  nav,
+  ul {
+    padding: 0px;
+  }
+  li {
+    padding: 0.9em 1.5em;
+  }
+  nav > img {
+    width: 40px;
+    height: 40px;
+  }
+  #box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ff0000;
+    background-image: linear-gradient(green, blue, red, yellow, purple);
+  }
+  /* To check when my website is reaching 650px width */
+  /* h1 {
+    color: chocolate;
+  } */
+}

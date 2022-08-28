@@ -1,0 +1,375 @@
+/* Default CSS ~ Only for top section; Other sections has 22 margin horizontally (Inline CSS) */
+* {
+  margin: 0px 0px;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+::selection {
+  background-color: maroon;
+  color: yellow;
+}
+
+/* Setting Navigation bar and Header of the Website */
+#top {
+  height: 10rem;
+  background-color: rgb(98, 181, 184);
+}
+#top > h1 {
+  padding: 0px 35%;
+}
+#top ul {
+  display: flex;
+  margin: 44px 1050px;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: rgb(245, 32, 32);
+  background-color: rgb(255, 255, 255);
+}
+#top li {
+  list-style: none;
+  font-size: 1.2em;
+  padding: 0px 15px;
+}
+#top a {
+  text-decoration: none;
+  color: black;
+}
+
+/* All words containing this classes are referred as red coloured links */
+.redlinks {
+  color: maroon;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Main container where content lies*/
+#main {
+  /* border: 1px solid #000; */
+  width: 60%;
+  float: left;
+}
+p.location {
+  margin: 4rem 4rem 1rem 4rem;
+  color: grey;
+}
+#main .location a {
+  color: maroon;
+}
+p.heading2 b {
+  font-size: 3rem;
+}
+p.time {
+  margin: 0vh 0vh 12vh;
+}
+h4 {
+  /*first id <p>*/
+  font-size: 1.1rem;
+  line-height: 35px;
+  font-stretch: expanded;
+}
+.main-image {
+  margin: 18px 0px;
+  position: relative;
+  left: 2.7vw; /*Setting image in center*/
+}
+.connects {
+  display: flex;
+  justify-content: space-around;
+  margin: 33px 0px 0px 0px;
+}
+.one, .two, .three, .four, .five, .six{
+  height: 5vh;
+  align-content: center; /*How to center the text?*/
+  /* text-align: center; */ /*Not working on flex items*/
+  border: 2px solid black;
+  padding: 0vw 2.5vw;
+  margin: 0px 7px;
+  transform: skewX(-20deg);
+}
+
+.btn:hover {
+  color: blue;
+  text-decoration: underline;
+  opacity: 0.75;
+  cursor: pointer;
+  /* transform: skewX(-20deg); */
+}
+#second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #nineth, #tenth, #eleventh {
+  font-size: 1.1rem;
+  line-height: 35px;
+  font-stretch: expanded;
+  padding: 15px 0px;
+}
+p#seventh ul big {
+  font-size: 2rem;
+  transform: scaleX(3);
+  padding: 0px 44px;
+}
+p#seventh ul big li {
+  padding: 11px 0px;
+}
+.suggestions:hover{
+  color: lime;
+  font-size: 1rem;
+}
+#main h1 {
+  padding: 30px 0px 20px 0px;
+}
+.first-ad {
+  width: 30vw;
+  height: 50vh;
+  position: relative;
+  left: 11vw;
+  border: 1px solid #000;
+  margin: 22px 0px;
+}
+.img-three {
+  width: 40vw;
+  left: 9vw;
+}
+.img-fourth {
+  width: 400px;
+  left: 200px;
+}
+.img-fifth {
+  width: 450px;
+  left: 188px;
+}
+
+/* Comments area section */
+.comments {
+  border-radius: 5px;
+  border: 0px;
+}
+textarea {
+  resize: none;
+  margin: 30px 7px;
+  border-radius: 5px;
+}
+.comments .txt {
+  width: 300px;
+  height: 30px;
+  margin: 7px;
+}
+.submit {
+  background-color: green;
+  color: white;
+  position: relative;
+  left: 23vw;
+  width: 140px;
+  height: 35px;
+  border-radius: 3px;
+  border: 0px solid;
+  font-size: 1rem;
+}
+.comments p {
+  margin: 3rem 0rem 0.5rem 1rem;
+}
+.ad-text{
+  position: relative;
+  top: 24vh;
+}
+.second-ad{
+  position: relative;
+  width: 54rem;
+  height: 15rem;
+  top: 25vh;
+}
+/* Footer - Suggestion links */
+#end-heading {
+  margin: 300px 0px 0px 0px;
+}
+div.end {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 1.4rem;
+  color: maroon;
+  justify-items: center;
+}
+.end .main-items {
+  font-size: x-large;
+  margin: 0px 0px;
+}
+.end .items {
+  margin: 0px 0px 44px 0px;
+  font-size: smaller;
+}
+.items:hover {
+  color: limegreen;
+  cursor: pointer;
+}
+.main-items:hover {
+  color: limegreen;
+  cursor: pointer;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 24%;
+  height: 3500px;
+  float: right;
+  /* border: 1px solid #000; */
+  margin: 0px 75px 0px 0px;
+}
+
+.ad1 {
+  width: 23.6vw;
+  height: 40vh;  
+}
+.texts{
+  font-size: 1.5em;
+  color: maroon;
+  cursor: pointer;
+}
+.texts:hover{
+  color: lime;
+}
+.food1{
+  width: 28vw;
+  height: 55vh;
+  position: relative;
+  top: 125px;
+  right: 4vw;
+  border-radius: 10px;
+  margin: 0px 0px 66px 0px;
+}
+.food1-txt{
+  position: relative;
+  top: 57px;
+  bottom: 10vh;
+  left: 6vw;
+}
+.food2{
+  width: 28vw;
+  height: 55vh;
+  position: relative;
+  top: 130px;
+  right: 4vw;
+  border-radius: 6px;
+}
+.food2-txt{
+  position: relative;
+  top: 130px;
+  left: 5vw;
+}
+.ad2{
+  width: 24vw;
+  height: 50vh;
+  position: relative;
+  top: 300px;
+}
+.ad2-txt{
+  position: relative;
+  top: 49vh;
+}
+.food3{
+  width: 27vw;
+  height: 44vh;
+  position: relative;
+  right: 4vw;
+  top: 125vh;
+  border-radius: 5px;
+}
+.food3-txt{
+  position: relative;
+  top: 127vh;
+  left: 6vw;
+}
+.food4{
+  width: 27vw;
+  height: 55vh;
+  position: relative;
+  top: 177vh;
+  right: 4vw;
+  border-radius: 5px;
+}
+.food4-txt{
+  position: relative;
+  top: 178vh;
+  left: 2vw;
+}
+.ad3{
+  position: relative;
+  top: 277vh;
+}
+.ad3-txt{
+  position: relative;
+  top: 277vh;
+}
+
+/* Making responsive website */
+@media screen and (max-width: 1287px) {
+  #main {
+    width: 55%;
+    float: left;
+  }
+  #sidebar {
+    width: 24%;
+    height: 3500px;
+    float: right;
+    margin: 0px 75px 0px 0px;
+  }
+  #main{
+    width: 55%;
+  }
+  .img-one, .img-two{
+    margin: 18px 0px;
+    position: relative;
+    width: 655px;
+  }
+  .ad, .texts{
+    width: 21vw;
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 1247px) {
+  #top ul {
+    display: flex;
+    margin: 44px 820px;
+  }
+}
+
+/* For tablets */
+@media screen and (max-width: 1147px) {
+  #sidebar{
+    display: none;
+  }
+  #top ul {
+    display: flex;
+    margin: 30px 215px;
+  }
+  #main {
+    width: 55%;
+    padding: 0px 100px;
+  }
+  .img-one, .img-two {
+    left: -10vw;
+  }
+  .second-ad {
+    position: relative;
+    width: 46rem;
+    right: 100px;
+  }
+  .img-fourth, .img-fifth {
+    left: 33px;
+  }
+}
+
+/* For mobiles - But still website is not looking much good in it */
+@media screen and (max-width: 450px) {
+  #top ul {
+    display: flex;
+    margin: 30px 70px;
+  }
+  p.location {
+    margin: 4rem 1rem 1rem 1rem;
+    color: grey;
+  }
+  .img-fourth, .img-fifth {
+    left: -33px;
+  }
+}

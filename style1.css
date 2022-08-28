@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.left{
+    background-color: rgb(228, 220, 116);
+    width: 20vw;
+    height: 120vh;
+}
+.right{
+    background-color: rgb(228, 220, 116);
+    width: 20vw;        /* div element causing whitespace */
+    height: 120vh;
+}
+.container{
+    background-color: rgb(169, 231, 233);
+    width: 58vw;    /* Not 60 because whitespace between div tags resulting in extra margins*/
+    height: 120vh;
+    font-family: 'Tapestry', cursive;
+    position: relative;
+    bottom: 31vh;
+    line-height: 60px;
+    font-size: 18px;
+    text-transform: capitalize;
+    /* color: blue; */
+}
+#lorems{
+    line-height: 33px;
+}
+#chat{
+    max-width: 125px;
+    max-height: 50px;
+    background-color: blueviolet;
+    color: whitesmoke;
+    position: fixed;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    left: 930px;
+    cursor: pointer;
+}
+.left, .right, .container{
+    display: inline-block;
+}
+div.box1{
+    max-width: 20em;
+    height: 15vw;
+    position: relative;
+    background-image: url('../images/KFC.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 10vh;
+}
+div.box2{
+    max-width: 20em;
+    height: 15vw;
+    position: relative;
+    background-image: url('../images/swiggy.jpg');
+    background-repeat: no-repeat;
+    top: 23vh;
+}
+div.boxI{
+    max-width: 20em;
+    height: 15vw;
+    position: relative;
+    background-image: url('../images/swiggy.jpg');
+    background-repeat: no-repeat;
+    top: 10vh;
+}
+div.boxII{
+    max-width: 20em;
+    height: 15vw;
+    position: relative;
+    background-image: url('../images/KFC.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 23vh;
+}
